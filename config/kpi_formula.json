@@ -1,0 +1,26 @@
+{
+    "energy_generation_total": {
+        "type": "normal",
+        "formula": "generation.biomass + generation.fossil.brown_coal_lignite + generation.fossil.coal_derived_gas + generation.fossil.gas + generation.fossil.hard_coal + generation.fossil.oil + generation.fossil.oil_shale + generation.fossil.peat + generation.geothermal + generation.hydro.pumped_storage + generation.hydro.run_of_river_and_poundage + generation.hydro.water_reservoir + generation.marine + generation.nuclear + generation.other + generation.other.renewable + generation.solar + generation.waste + generation.wind.offshore + generation.wind.onshore"
+    },
+    "energy_consumption_total": {
+        "type": "normal", 
+        "formula": "consumption.biomass + consumption.fossil.brown_coal_lignite + consumption.fossil.coal_derived_gas + consumption.fossil.gas + consumption.fossil.hard_coal + consumption.fossil.oil + consumption.fossil.oil_shale + consumption.fossil.peat + consumption.geothermal + consumption.hydro.pumped_storage + consumption.hydro.run_of_river_and_poundage + consumption.hydro.water_reservoir + consumption.marine + consumption.nuclear + consumption.other + consumption.other.renewable + consumption.solar + consumption.waste + consumption.wind.offshore + consumption.wind.onshore"
+    },
+    "energy_consumption_ratio": {
+        "type": "ratio",
+        "formula": "safediv(consumption.biomass + consumption.fossil.brown_coal_lignite + consumption.fossil.coal_derived_gas + consumption.fossil.gas + consumption.fossil.hard_coal + consumption.fossil.oil + consumption.fossil.oil_shale + consumption.fossil.peat + consumption.geothermal + consumption.hydro.pumped_storage + consumption.hydro.run_of_river_and_poundage + consumption.hydro.water_reservoir + consumption.marine + consumption.nuclear + consumption.other + consumption.other.renewable + consumption.solar + consumption.waste + consumption.wind.offshore + consumption.wind.onshore, generation.biomass + generation.fossil.brown_coal_lignite + generation.fossil.coal_derived_gas + generation.fossil.gas + generation.fossil.hard_coal + generation.fossil.oil + generation.fossil.oil_shale + generation.fossil.peat + generation.geothermal + generation.hydro.pumped_storage + generation.hydro.run_of_river_and_poundage + generation.hydro.water_reservoir + generation.marine + generation.nuclear + generation.other + generation.other.renewable + generation.solar + generation.waste + generation.wind.offshore + generation.wind.onshore)"
+    },    
+    "fossil_energy_ratio": {
+        "type": "ratio",
+        "formula": "safediv(generation.fossil.brown_coal_lignite + generation.fossil.coal_derived_gas + generation.fossil.gas + generation.fossil.hard_coal + generation.fossil.oil + generation.fossil.oil_shale + generation.fossil.peat, generation.biomass + generation.fossil.brown_coal_lignite + generation.fossil.coal_derived_gas + generation.fossil.gas + generation.fossil.hard_coal + generation.fossil.oil + generation.fossil.oil_shale + generation.fossil.peat + generation.geothermal + generation.hydro.pumped_storage + generation.hydro.run_of_river_and_poundage + generation.hydro.water_reservoir + generation.marine + generation.nuclear + generation.other + generation.other.renewable + generation.solar + generation.waste + generation.wind.offshore + generation.wind.onshore)"
+    },
+    "hydro_energy_ratio": {
+        "type": "ratio",
+        "formula": "safediv(generation.hydro.pumped_storage + generation.hydro.run_of_river_and_poundage + generation.hydro.water_reservoir, generation.biomass + generation.fossil.brown_coal_lignite + generation.fossil.coal_derived_gas + generation.fossil.gas + generation.fossil.hard_coal + generation.fossil.oil + generation.fossil.oil_shale + generation.fossil.peat + generation.geothermal + generation.hydro.pumped_storage + generation.hydro.run_of_river_and_poundage + generation.hydro.water_reservoir + generation.marine + generation.nuclear + generation.other + generation.other.renewable + generation.solar + generation.waste + generation.wind.offshore + generation.wind.onshore)"
+    },    
+    "nuclear_energy_ratio": {
+        "type": "ratio",
+        "formula": "safediv(generation.nuclear, generation.biomass + generation.fossil.brown_coal_lignite + generation.fossil.coal_derived_gas + generation.fossil.gas + generation.fossil.hard_coal + generation.fossil.oil + generation.fossil.oil_shale + generation.fossil.peat + generation.geothermal + generation.hydro.pumped_storage + generation.hydro.run_of_river_and_poundage + generation.hydro.water_reservoir + generation.marine + generation.nuclear + generation.other + generation.other.renewable + generation.solar + generation.waste + generation.wind.offshore + generation.wind.onshore)"
+    } 
+}
